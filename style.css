@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fondotelon{
+    background-image: url(Telon.jpg);
+    height: 180vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondosala{
+    background-image: url(Teatro.jpg);
+    height: 180vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .fondotelon{
+            background-image: url(Telon.jpg);
+            height: 280vh;
+    }
+    .fondosala{
+        background-image: url(Teatro.jpg);
+        height: 280vh;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .fondotelon{
+            background-image: url(Telon.jpg);
+            height: 450vh;
+    }
+    .fondosala{
+        background-image: url(Teatro.jpg);
+        height: 450vh;
+    }
+}
+
+.eventos{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-icono svg{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+table{
+    padding: 2px;
+    font-size: 20px;
+}
+
+th{
+    padding: 2px;
+}
+
+tr{
+    border: 1px;
+    padding: 2px;
+}
+
+td{
+    border: 1px;
+    padding: 2px;
+}
