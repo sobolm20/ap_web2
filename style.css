@@ -6,13 +6,21 @@
 
 .fondotelon{
     background-image: url(Telon.jpg);
-    height: 180vh;
+    height: 200vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.fondotelon2{
+    background-image: url(Telon2.jpg);
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .fondosala{
     background-image: url(Teatro.jpg);
-    height: 180vh;
+    height: 200vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,6 +29,10 @@
     .fondotelon{
             background-image: url(Telon.jpg);
             height: 280vh;
+    }
+    .fondotelon2{
+        background-image: url(Telon2.jpg);
+        height: 280vh;
     }
     .fondosala{
         background-image: url(Teatro.jpg);
@@ -34,11 +46,20 @@
             background-image: url(Telon.jpg);
             height: 450vh;
     }
+    .fondotelon2{
+        background-image: url(Telon2.jpg);
+        height: 450vh;
+    }
     .fondosala{
         background-image: url(Teatro.jpg);
         height: 450vh;
     }
 }
+
+
+
+
+
 
 .eventos{
     margin: 20px;
