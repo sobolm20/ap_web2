@@ -6,21 +6,21 @@
 
 .fondotelon{
     background-image: url(Telon.jpg);
-    height: 220vh;
+    height: 300vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .fondotelon2{
     background-image: url(Telon2.jpg);
-    height: 220vh;
+    height: 300vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .fondosala{
     background-image: url(Teatro.jpg);
-    height: 220vh;
+    height: 300vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -28,15 +28,15 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     .fondotelon{
             background-image: url(Telon.jpg);
-            height: 300vh;
+            height: 450vh;
     }
     .fondotelon2{
         background-image: url(Telon2.jpg);
-        height: 300vh;
+        height: 450vh;
     }
     .fondosala{
         background-image: url(Teatro.jpg);
-        height: 300vh;
+        height: 450vh;
     }
 }
 
@@ -44,15 +44,15 @@
 @media screen and (max-width: 767px) {
     .fondotelon{
             background-image: url(Telon.jpg);
-            height: 500vh;
+            height: 800vh;
     }
     .fondotelon2{
         background-image: url(Telon2.jpg);
-        height: 500vh;
+        height: 800vh;
     }
     .fondosala{
         background-image: url(Teatro.jpg);
-        height: 500vh;
+        height: 800vh;
     }
 }
 
@@ -60,8 +60,6 @@
     height: 250px;
     object-fit: cover;
 }
-
-
 
 
 .eventos{
