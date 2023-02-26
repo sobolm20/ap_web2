@@ -16,7 +16,7 @@ function printCards(){
                     <h5 class="card-title">${card.name}</h5>
                     <p class="card-text">${card.description}</p>
                     <h6 class="card-subtitle mb-2 text-muted">${card.price}</h6>
-                    <a href="details.html" class="card-link">Details</a>
+                    <a class="btn btn-primary" href="details.html" role="button">Details</a>
                 </div>
             </div>
             `
