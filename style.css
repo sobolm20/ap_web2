@@ -19,8 +19,8 @@
 }
 
 .fondosala{
-    background-image: url(Teatro.jpg);
-    height: 300vh;
+    background-image: url(Teatro2.jpg);
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,8 +35,8 @@
         height: 380vh;
     }
     .fondosala{
-        background-image: url(Teatro.jpg);
-        height: 380vh;
+        background-image: url(Teatro2.jpg);
+        height: 60vh;
     }
 }
 
@@ -50,8 +50,8 @@
         height: 500vh;
     }
     .fondosala{
-        background-image: url(Teatro.jpg);
-        height: 500vh;
+        background-image: url(Teatro2.jpg);
+        height: 60vh;
     }
 }
 
@@ -65,8 +65,8 @@
         height: 980vh;
     }
     .fondosala{
-        background-image: url(Teatro.jpg);
-        height: 980vh;
+        background-image: url(Teatro2.jpg);
+        height: 60vh;
     }
 }
 
@@ -77,6 +77,12 @@
 
 .container-box{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-box2{
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
 }

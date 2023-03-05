@@ -11,72 +11,65 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="fondosala">     
-        <img src="Logo_Amazing_Events.png" class="rounded float-start p-3" alt="Logo" width="250" height="100">
-        <div class="container-fluid row bg-black align-self-center">
-            <nav class="navbar navbar-expand-lg bg-body-black">
-                <div class="container-fluid">
-                  <a class="navbar-brand btn btn-outline-light btn-lg text-white" href="index.html">Home</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item p-2">
-                        <a class="nav-link btn btn-outline-light btn-lg text-white" aria-current="page" href="upcoming.html">Upcoming Events</a>
-                      </li>
-                      <li class="nav-item p-2">
-                        <a class="nav-link btn btn-outline-light btn-lg text-white" href="past.html">Past Events</a>
-                      </li>
-                      <li class="nav-item p-2">
-                        <a class="nav-link  btn btn-outline-light btn-lg text-white" href="contact.html">Contact</a>
-                      </li>
-                      <li class="nav-item p-2">
-                        <a class="nav-link  btn btn-outline-light btn-lg text-white" href="stats.html">Stats</a>
-                      </li>
-                    </ul>
-                  </div>
+  <header>
+    <div class="container-box2">
+      <div class="fondosala">     
+      <img src="Logo_Amazing_Events.png" class="rounded float-start p-3" alt="Logo" width="250" height="100">
+      <div class="container-fluid row bg-black align-self-center">
+          <nav class="navbar navbar-expand-lg bg-body-black">
+              <div class="container-fluid">
+                <a class="navbar-brand btn btn-outline-light btn-lg text-white" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item p-2">
+                      <a class="nav-link btn btn-outline-light btn-lg text-white" aria-current="page" href="upcoming.html">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link btn btn-outline-light btn-lg text-white" href="past.html">Past Events</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link  btn btn-outline-light btn-lg text-white" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link  btn btn-outline-light btn-lg text-white" href="stats.html">Stats</a>
+                    </li>
+                  </ul>
                 </div>
-              </nav>
-        </div>
-            <div class="container d-flex justify-content-between">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                  </svg>
-                <h2  class="display-3 text-center text-black">Upcoming Events</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </div>
-            <nav class="navbar bg-body-black">
-                <div class="container text-black">
-                    <form action="/action_page.php" method="get">
-                        <fieldset>
-                            <label for="categ1">Category</label>
-                            <input type="checkbox" name="categ1" value="Category" id="categ1">
-                            <label for="categ2">Category</label>
-                            <input type="checkbox" name="categ2" value="Category" id="categ2">    
-                            <label for="categ3">Category</label>
-                            <input type="checkbox" name="categ3" value="Category" id="categ3">    
-                            <label for="categ4">Category</label>
-                            <input type="checkbox" name="categ4" value="Category" id="categ4">
-                            <label for="categ5">Category</label>
-                            <input type="checkbox" name="categ5" value="Category" id="categ5">
-                        </Fieldset>
-                    </form>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-            </nav>
-            <div class="container d-flex flex-wrap">
-                <div class="eventos" id="eventsupcom">
-                </div>
-            </div>
-        </div>   
+              </div>
+          </nav>
+      </div>
+    </div>   
+  </div>
+  </header>
+  <main class="flex-grow-1">
+      <div class="container d-flex justify-content-between">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        <h2  class="display-3 text-center text-black">Upcoming Events</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
     </div>
+    <nav class="navbar bg-body-black">
+        <div class="container text-black">
+            <form action="/action_page.php" method="get" id="categupcom" class="d-flex justify-content-between">
+                
+            </form>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class="container d-flex flex-wrap">
+        <div class="eventos" id="eventsupcom">
+        </div>
+    </div>
+    </main>
     <footer>
     <div class="container-fluid">
         <div class="container-icono">
