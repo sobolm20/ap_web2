@@ -28,74 +28,82 @@ function printCards(){
 
 printCards();
 
+
 //CATEGORIAS
-let categories = []
-console.log(eventos.forEach(each => { 
-    if (!categories.includes(each.category))
-    categories.push(each.category)
-}));
-console.log(categories);
+// let categories = []
+// eventos.forEach(each => { 
+//     if (!categories.includes(each.category)){
+//         categories.push(each.category)
+//     }
+// });
+// console.log(categories);
 
-let templeteCategory = []
+// let templeteCategory = ()=>{
+//     return
+//     `
+//     <fieldset class="p-2 m-2">
+//         <label class="contact-label" for="${each}">${each}</label>
+//         <input onclick="captureData()" class="class_checks contact-input" type="checkbox" name="categ" value="${each}" id="${each}"> 
+//     </Fieldset>       
+//     `
 
-function printCategory(){
-    for (let each of categories){
-    let listcategory =
-        `
-        <fieldset class="p-2 m-2">
-            <label class="contact-label" for="${each}">${each}</label>
-            <input onclick="captureData()" class="class_checks contact-input" type="checkbox" name="categ" value="${each}" id="${each}"> 
-        </Fieldset>
-        `
-        templeteCategory.push(listcategory);       
-    }
-    let basecateg = document.getElementById('categcomp');
-    basecateg.innerHTML = templeteCategory.join('')
-}
+// }
 
-printCategory();
+// let printCategory = (id_html, categories) => {
+//     let selector = document.querySelector(`#${id_html}`)
+//     let templete = categories.map(templeteCategory).join('')
+//     selector.innerHTML(templete)
+//     console.log(templeteCategory);
+// }
 
-function captureData() {
-    let texto = document.getElementById('id_search').value
-    let checks = Array.from(document.querySelectorAll('.class_checks:checked')).map(each => each.value)
-    let filtro = eventos.filter(each => {
-        return(
-            each.name.includes(texto)
-        ) && (
-            (checks.length === 0 || checks.includes(each.category))
-        )
-    })
-    console.log(filtro)
-    if (filtro.length=0) {
-        printCards('eventscomp',filtro)
-    } else {
-        let container = document.querySelector('eventscomp')
-        container.innerHTML = `
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">EVENTS NON FOUND</h5>
-            </div>
-        </div>
-        `
-    }
-}
+// printCategory('categcomp',categories);
 
-    
 
+// function printCategory(){
+//     for (let each of categories){
+//     let listcategory =
+//         `
+//         <fieldset class="p-2 m-2">
+//             <label class="contact-label" for="${each}">${each}</label>
+//             <input onclick="captureData()" class="class_checks contact-input" type="checkbox" name="categ" value="${each}" id="${each}"> 
+//         </Fieldset>
+//         `
+//         templeteCategory.push(listcategory);       
+//     }
+//     let basecateg = document.getElementById('categcomp');
+//     basecateg.innerHTML = templeteCategory.join('')
+// }
+
+// printCategory();
 
 // function captureData() {
 //     let texto = document.getElementById('id_search').value
 //     let checks = Array.from(document.querySelectorAll('.class_checks:checked')).map(each => each.value)
-//     let filtro = animales.filter(each => {
-//         return (each.nombre.includes(texto)) && (checks.length === 0 || checks.includes(each.tipo))
+//     let filtro = eventos.filter(each => {
+//         return(
+//             each.name.includes(texto)
+//         ) && (
+//             (checks.length === 0 || checks.includes(each.category))
+//         )
 //     })
 //     console.log(filtro)
-    // if (filtro.length>0) {
-    //     printTemplates('#pet_container',filtro)
-    // } else {
-    //     notFound('#pet_container')
-    // }
+//     if (filtro.length=0) {
+//         printCards('eventscomp',filtro)
+//     } else {
+//         let container = document.querySelector('eventscomp')
+//         container.innerHTML = `
+//         <div class="card" style="width: 18rem;">
+//             <div class="card-body">
+//                 <h5 class="card-title">EVENTS NON FOUND</h5>
+//             </div>
+//         </div>
+//         `
+//     }
 // }
+
+    
+
+
 
 
 

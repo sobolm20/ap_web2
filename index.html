@@ -48,21 +48,24 @@
       <div class="container d-flex justify-content-between">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-left text-warning" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-          <a href="index.html"></a>   
+          <use xlink:href="index.html"/>   
         </svg>
         <h2  class="display-3 text-center text-black">Home</h2>
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-right text-warning" viewBox="0 0 16 16">
-          <a href="upcoming.html"></a>
             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+            <use xlink:href="upcoming.html"/> 
           </svg>
       </div>
       <nav class="navbar bg-body-black">
         <div class="container text-black">
             <form action="/action_page.php" method="get" id="categcomp" class="d-flex justify-content-between">
-                
+              <fieldset class="p-2 m-2">
+                <label class="contact-label" for="name"></label>
+                <input class="class_checks contact-input" type="checkbox" name="name" id="name"> 
+            </Fieldset> 
             </form>
             <form class="d-flex" role="search">
-            <input onkeyup="captureData()" id="id_search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input onkeyup='captureData("name", "checks")' id="name" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
@@ -89,7 +92,11 @@
             <h5 class="display-3 text-end text-black">Cohort</h5>
         </div>
     </footer>
+    <script src="js/data_ae.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/checks.js"></script>
+
 </body>
-<script src="js/data_ae.js"></script>
-<script src="js/home.js"></script>
+
 </html>
