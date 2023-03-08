@@ -1,4 +1,4 @@
-//seleccionar HOME
+//FILTRAR UPCOMMING
 
 let templeteCard = (eventos) =>{
     return`
@@ -22,15 +22,15 @@ let printEvents = (id_html, array_events) => {
 }
          
 let captureData = () =>{
-    let inputText = document.querySelector(`#name`).value
+    let inputText = document.querySelector(`#nameU`).value
     console.log(inputText);
-    let inputChecks = Array.from(document.querySelectorAll(`.categinput:checked`)).map(each =>each.value)
+    let inputChecks = Array.from(document.querySelectorAll(`.categinputU:checked`)).map(each =>each.value)
     let eveFiltered = eventos.filter(each =>{
         return(
             each.name.toLowerCase().includes(inputText.toLowerCase()) && (inputChecks.length === 0 || inputChecks.includes(each.category)))
     })
     console.log(eveFiltered);
-    printEvents('eventscomp',eveFiltered);
+    printEvents('eventsupcom',eveFiltered);
 }
 
-document.querySelector('#name').addEventListener("keyup", ()=> captureData("name","checks", eventos))
+document.querySelector('#nameU').addEventListener("keyup", ()=> captureData("name","checks", eventos))

@@ -10,7 +10,7 @@ let templeteCategory = (category)=>{
     return`
     <fieldset class="p-2 m-2">
         <label class="contact-label" for="${category}">${category}</label>
-        <input onclick='captureData("name", "checks")' class="class_checks contact-input" type="checkbox" name="categ" value="${category}" id="${category}"> 
+        <input onclick='captureData()' class="class_checks contact-input categinput" type="checkbox" name="categ" value="${category}" id="${category}"> 
     </Fieldset>       
     `
 }
