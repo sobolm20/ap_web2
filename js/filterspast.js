@@ -27,7 +27,7 @@ let captureData = () =>{
     let inputChecks = Array.from(document.querySelectorAll(`.categinputpast:checked`)).map(each =>each.value)
     let eveFiltered = eventos.filter(each =>{
         return(
-            each.name.toLowerCase().includes(inputText.toLowerCase()) && (inputChecks.length === 0 || inputChecks.includes(each.category)))
+            each.name.toLowerCase().includes(inputText.toLowerCase()) && (inputChecks.length === 0 || inputChecks.includes(each.category)) && (each.date < currentDate))
     })
     console.log(eveFiltered);
     printEvents('eventspast',eveFiltered);

@@ -20,17 +20,17 @@ let printEvents = (id_html, array_events) => {
     selector.innerHTML = templetes
     console.log(templetes);
 }
-         
+
 let captureData = () =>{
-    let inputText = document.querySelector(`#nameU`).value
+    let inputText = document.querySelector(`#nameupcom`).value
     console.log(inputText);
-    let inputChecks = Array.from(document.querySelectorAll(`.categinputU:checked`)).map(each =>each.value)
+    let inputChecks = Array.from(document.querySelectorAll(`.categinputupcom:checked`)).map(each =>each.value)
     let eveFiltered = eventos.filter(each =>{
         return(
-            each.name.toLowerCase().includes(inputText.toLowerCase()) && (inputChecks.length === 0 || inputChecks.includes(each.category)))
+            each.name.toLowerCase().includes(inputText.toLowerCase()) && (inputChecks.length === 0 || inputChecks.includes(each.category)) && (each.date > currentDate))
     })
     console.log(eveFiltered);
     printEvents('eventsupcom',eveFiltered);
 }
 
-document.querySelector('#nameU').addEventListener("keyup", ()=> captureData("name","checks", eventos))
+document.querySelector('#nameupcom').addEventListener("keyup", ()=> captureData("name","checks", eventos))

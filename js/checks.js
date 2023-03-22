@@ -1,14 +1,14 @@
 let categories = []
-eventos.forEach(each => { 
-    if (!categories.includes(each.category)){
-        categories.push(each.category)
-    }
-});
+
+function check(array_events){
+    categories = Array.from(new Set(array_events.map(each => each.category)))
+}
+
 console.log(categories);
 
-let templeteCategory = (category)=>{
+function templeteCategory (category){
     return`
-    <fieldset class="p-2 m-2">
+    <fieldset class="fs-6 m-2">
         <label class="contact-label" for="${category}">${category}</label>
         <input onclick='captureData()' class="class_checks contact-input categinput" type="checkbox" name="categ" value="${category}" id="${category}"> 
     </Fieldset>       

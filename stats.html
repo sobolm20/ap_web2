@@ -13,7 +13,7 @@
 <body>
   <header>
     <div class="container-box2">
-      <div class="fondosala">    
+      <div class="fondosala container-fluid">    
         <img src="Logo_Amazing_Events.png" class="rounded float-start" alt="Logo" width="250" height="100">
         <div class="container-fluid row bg-black align-self-center">
           <nav class="navbar navbar-expand-lg bg-body-black">
@@ -39,13 +39,13 @@
                   </ul>
                 </div>
               </div>
-            </nav>
+          </nav>
         </div>
       </div>
     </div>
   </header>
   <main class="flex-grow-1">
-    <div class="container d-flex justify-content-between p-3 mb-2 bg-secondary text-black">
+      <div class="container d-flex justify-content-between p-3 mb-2 bg-secondary text-black">
       <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="black" class="bi bi-chevron-left" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
       </svg>
@@ -58,24 +58,17 @@
       <table class="table">
           <thead>
           <tr>
-              <th colspan="3" class="fs-3 text-start p-2 mb-2 bg-danger" >Events Statistics</th>
+              <th colspan="6" class="fs-3 text-start p-2 mb-2 bg-danger" >Events Statistics</th>
           </tr>
           <tr>
-              <th class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with the highest percentage of attendance</th>
-              <th class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with the lowest percentage of attendance</th>
-              <th class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with target cpacity</th>
+              <th colspan="2" class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with the highest percentage of attendance</th>
+              <th colspan="2" class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with the lowest percentage of attendance</th>
+              <th colspan="2" class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Events with target cpacity</th>
           </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
+            <tr id="statsone">
+
             </tr>
           </tbody>
         </table>     
@@ -90,27 +83,8 @@
               <th class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Percetage of attendence</th>
           </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
+          <tbody id="statstwo">
+
           </tbody>
         </table>
         <table class="table">
@@ -124,37 +98,8 @@
               <th class="p-2 bg-light bg-opacity-15 border border-info rounded-end">Percetage of attendence</th>
           </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
-            <tr>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-              <td class="p-3 bg-light bg-opacity-15 border border-info rounded-end"></td>
-            </tr>
+          <tbody id="statsthree">
+            
           </tbody>
         </table>
       </div>
@@ -174,7 +119,10 @@
               <h5 class="display-3 text-end text-black">Cohort</h5>
           </div>
       </div>
-  </footer>    
+  </footer>
+  <!-- <script src="js/data_ae.js"></script> -->
+  <script src="js/stats.js"></script>
+  
 </body>
 
 </html>
